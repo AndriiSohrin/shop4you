@@ -1,0 +1,12 @@
+.wrap{
+  background-color: antiquewhite;
+  width: 100%;
+}
+
+h2{
+  text-align: center;
+}
+
+main {
+  min-height: 30rem;
+}

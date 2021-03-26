@@ -1,0 +1,33 @@
+<!--<swiper-->
+<!--  [slidesPerView]="3"-->
+<!--  [spaceBetween]="50"-->
+<!--  (swiper)="onSwiper($event)"-->
+<!--  (slideChange)="onSlideChange()"-->
+<!--&gt;-->
+<!--  <ng-template swiperSlide>Slide 1</ng-template>-->
+<!--  <ng-template swiperSlide>Slide 2</ng-template>-->
+<!--  <ng-template swiperSlide>Slide 3</ng-template>-->
+<!--</swiper>-->
+
+<div class="swip-wrapper">
+  <swiper>
+    <ng-template swiperSlide >
+      <div class="sw-item">
+        <img src="./assets/nelos.jpg" alt="nelos">
+      </div>
+    </ng-template>
+
+    <ng-template swiperSlide >
+      <div class="sw-item">
+        <img src="./assets/los.jpg" alt="los">
+      </div>
+    </ng-template>
+
+    <ng-template swiperSlide >
+      <div class="sw-item">
+        <img src="./assets/el.jpg" alt="el">
+      </div>
+    </ng-template>
+  </swiper>
+</div>
+
