@@ -7,6 +7,7 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { SwiperModule } from 'swiper/angular';
 import { MainSwiperComponent } from './components/main-swiper/main-swiper.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,10 @@ import { MainSwiperComponent } from './components/main-swiper/main-swiper.compon
   ],
   imports: [
     BrowserModule,
-    SwiperModule
+    SwiperModule,
+    RouterModule.forRoot([
+      { path: '', component: AppComponent },
+    ], { scrollPositionRestoration: 'top', useHash: true }),
   ],
   providers: [],
   bootstrap: [AppComponent]
