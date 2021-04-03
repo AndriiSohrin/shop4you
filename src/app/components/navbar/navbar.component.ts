@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'navbar',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  @Input()
+  openMenu: boolean;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  open(): void {
+    this.openMenu = !this.openMenu;
+  }
 }
