@@ -1,43 +1,25 @@
-<!--<nav>-->
-<!--  <div class="nav-wrapper">-->
-<!--    <a href="#" class="brand-logo">Shop4you</a>-->
-<!--    <ul id="nav-mobile" class="right hide-on-med-and-down">-->
-<!--      <li><a href="sass.html">Оплата</a></li>-->
-<!--      <li><a href="badges.html">Доставка</a></li>-->
-<!--      <li><a href="collapsible.html">О компании</a></li>-->
-<!--      <li><a href="collapsible.html">Каталог</a></li>-->
-<!--      <li><a href="collapsible.html">Контакты</a></li>-->
-<!--    </ul>-->
-<!--  </div>-->
-<!--  -->
-<!--  -->
-<!--  -->
-<!--  -->
-<!--</nav>-->
-
-
-<ul id="dropdown1" class="dropdown-content" [ngClass]="openMenu && 'open'">
-  <li><a href="#!">one</a></li>
-  <li><a href="#!">two</a></li>
-  <li class="divider"></li>
-  <li><a href="#!">three</a></li>
-  <li><a href="#!">fore</a></li>
-  <li><a href="#!">five</a></li>
-  <li class="divider"></li>
-  <li><a href="#!">six</a></li>
-</ul>
-
-<nav>
-  <div class="nav-wrapper">
-    <a href="#!" class="brand-logo">Logo</a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <!-- Dropdown Trigger -->
-      <li (click)="open()"><a class="dropdown-trigger" href="#" data-target="dropdown1">Menu<i class="dropPos fas fa-caret-down"></i></a></li>
-    </ul>
-    <ul class="mobile right">
-      <li (click)="open()"><a style="position: relative" class="dropdown-trigger" href="#" data-target="dropdown1">Menu <i class="dropPosMenu fas fa-caret-down"></i></a></li>
-    </ul>
+<div style=" background-color: #0F0F0F;">
+  <div class="container row wrap_line_top">
+    <div class="nav-left">
+      <div>
+        <div class="logo"></div>
+      </div>
+    </div>
+    <div class="nav-right">
+    <div style="height: 100%">
+      <ul class="list-item">
+        <li class="item">Понравилось</li>
+        <li class="item">Личный кабинет</li>
+        <li class="item">Настройки</li>
+        <li class="item">
+          <div class="basket_img"></div>
+        </li>
+        <li class="search_item">
+          <div class="search_img"></div>
+        </li>
+      </ul>
+    </div>
+    </div>
   </div>
-</nav>
+</div>
+

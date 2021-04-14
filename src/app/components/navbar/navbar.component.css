@@ -1,43 +1,88 @@
-.nav-wrapper{
-  padding: 0 2rem;
-  background-color: black;
+.wrap_line_top {
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0;
+  /*text setting*/
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #969696;
 }
 
-#nav-mobile li:hover{
-  background-color: grey;
+.nav-left {
+  display: flex;
+  align-items: center;
+  width: 50%;
 }
 
-.open{
-  display: block;
-  opacity: 1;
-  right: 0px;
-  top: 65px;
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  height: 100%;
 }
 
-.mobile{
-  display: none;
+.list-item {
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #969696;
+
+  display: flex;
+  height: 100%;
+  margin: 0;
 }
 
-.dropPos{
-  position: absolute;
-  right: 25px;
+.item {
+  padding: 32px 20px;
+  cursor: pointer;
 }
 
-.dropPosMenu{
-  position: absolute;
-  top: 15px;
-  right: -6px;
+.search_item {
+  padding: 32px 20px;
+  cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .mobile{
-    display: block;
+.item:hover {
+  background-color: #1F1F1F;
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.logo {
+  background: url("../../../assets/LogoPorten.png") center center no-repeat;
+  background-size: contain;
+  min-width: 104px;
+  min-height: 49px;
+  cursor: pointer;
+}
+
+.basket_img {
+  background: url("../../../assets/icon/bascket.png") center center no-repeat;
+  background-size: contain;
+  min-width: 22px;
+  min-height: 22px;
+}
+
+.search_img {
+  background: url("../../../assets/icon/search.png") center center no-repeat;
+  background-size: contain;
+  min-width: 17px;
+  min-height: 17px;
+}
+@media (max-width: 800px) {
+  .nav-right{
+    display: none;
   }
 }
 
-@media only screen and (max-width: 992px) {
-  nav .brand-logo{
-    left: 12%;
-  }
-}
 

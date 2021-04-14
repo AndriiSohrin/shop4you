@@ -9,4 +9,6 @@ h2{
 
 main {
   min-height: 30rem;
+  max-width: 1920px;
+  margin: auto;
 }

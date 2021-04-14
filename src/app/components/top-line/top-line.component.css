@@ -1,0 +1,40 @@
+.wrap_line_top{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+  /*text setting*/
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #969696;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.top-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.enter_img {
+  background: url("../../../assets/icon/enter.png") center center no-repeat;
+  background-size: contain;
+  min-width: 20px;
+  min-height: 25px;
+  margin-right: 16px;
+}
+
+.phone_img {
+  background: url("../../../assets/icon/phone.png") center center no-repeat;
+  background-size: contain;
+  min-width: 13px;
+  min-height: 13px;
+  margin-right: 16px;
+}
